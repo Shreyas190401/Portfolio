@@ -435,14 +435,14 @@ linkHoverEffect();
 
 //change theme
 function themeMode() {
-    var changeTheme = document.getElementById("icon-theme");
-    var changeSkillIconTheme = document.getElementById("github-icon");
+    const changeTheme = document.getElementById("icon-theme");
+    const changeSkillIconTheme = document.getElementById("github-icon");
+    
+    let localData = localStorage.getItem("theme");
 
     if (localStorage.getItem("theme") == null) {
         localStorage.setItem("theme", "light");
     }
-
-    let localData = localStorage.getItem("theme");
 
     if (localData == "light") {
         changeTheme.src = "/images/lighttheme.svg";
