@@ -435,8 +435,8 @@ linkHoverEffect();
 
 //change theme
 function themeMode() {
-    var changeTheme = document.getElementById("icon-theme");
-    var changeSkillIconTheme = document.getElementById("github-icon");
+    const changeTheme = document.getElementById("icon-theme");
+    const changeSkillIconTheme = document.getElementById("github-icon");
     
     let localData = localStorage.getItem("theme");
 
